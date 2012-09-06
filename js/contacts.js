@@ -8,8 +8,8 @@ function contactsList(){
 		}
 	}else{
 		$("body>section#contacts>ul#contactslist").html("<li id=\"none\"><div id=\"text\">No contacts yet<br /><span class=\"small\">Import from a <em>.vcf</em> file by dragging and dropping below</span></div></li>");
-		$("body>section#contacts>figure#vcfimport").show();
 	}
+	$("body>section#contacts>figure#vcfimport").show(); //leave the VCF drop visible so new contacts can be appended
 }
 
 function dragenter(e){
